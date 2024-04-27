@@ -1,10 +1,10 @@
-# TiniJS Starter Blank 
+# Blank Template 
 
-The base structure of a TiniJS app.
+The blank starter template.
 
 ## Install
 
-- Via the CLI: `npx @tinijs/cli new my-app --template blank --latest`
+- Via the CLI: `npx @tinijs/cli@latest new my-app --template blank`
 
 - Or, download this repo and run `npm i`.
 
@@ -14,8 +14,8 @@ The base structure of a TiniJS app.
 - Run `npm run build` to build the app and optionally `npm run preview` to preview the production build.
 - Deploy the `.output` folder to any static server.
 
-For more information, please visit <https://tinijs.dev>.
+For more details, please visit <https://tinijs.dev>.
 
 ## License
 
-The Starter is released under the [MIT](./LICENSE) license.
+Released under the [MIT](./LICENSE) license.
