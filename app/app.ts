@@ -8,11 +8,8 @@ import {
 } from '@tinijs/core';
 import {createRouter, type AppWithRouter} from '@tinijs/router';
 import {initMeta, type AppWithMeta} from '@tinijs/meta';
-import {
-  setupUI,
-  bootstrapLightSkin,
-  type AppWithUI,
-} from '@tinijs/ui-bootstrap';
+import {setupUI, type AppWithUI} from '@tinijs/ui-bootstrap';
+import {bootstrapLightSkin} from '@tinijs/ui-bootstrap/skins/light.js';
 
 import type {AppConfig} from './types/common.js';
 
