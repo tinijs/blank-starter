@@ -8,23 +8,23 @@ export class AppWelcomeComponent extends TiniComponent {
 
   protected render() {
     return html`
-      <h1>Hello! 👋</h1>
-      <p>Thank you for using the TiniJS <strong>Blank</strong> template.</p>
-      <p>Get started from <code>./app/pages/home.ts</code>.</p>
-      <p>
-        For more detail, please visit
-        <a href="https://tinijs.dev/" target="_blank">tinijs.dev</a>.
-      </p>
+      <article>
+        <h1>Hello! 👋</h1>
+        <p>Thank you for using the TiniJS <strong>Blank</strong> template.</p>
+        <p>Get started from <code>./app/pages/home.ts</code>.</p>
+        <p>
+          For more detail, please visit
+          <a href="https://tinijs.dev/" target="_blank">tinijs.dev</a>.
+        </p>
+      </article>
     `;
   }
 
   static styles = css`
-    :host {
-      display: block;
+    article {
       margin: 0 auto;
-      padding: 1rem;
-      max-width: 768px;
-      font-family: sans-serif;
+      padding: var(--space-md);
+      max-width: var(--wide-md);
     }
   `;
 }
