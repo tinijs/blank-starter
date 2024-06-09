@@ -8,8 +8,11 @@ import {
 } from '@tinijs/core';
 import {createRouter, type AppWithRouter} from '@tinijs/router';
 import {initMeta, type AppWithMeta} from '@tinijs/meta';
-import {setupUI, type AppWithUI} from '@tinijs/ui-bootstrap';
-import {bootstrapLightSkin} from '@tinijs/ui-bootstrap/skins/light.js';
+import {
+  setupUI,
+  bootstrapLightSkin,
+  type AppWithUI,
+} from '@tinijs/ui-bootstrap';
 
 import type {AppConfig} from './types/common.js';
 
@@ -17,6 +20,7 @@ import {config} from './configs/development.js';
 import {metadata} from './metadata.js';
 import {providers} from './providers.js';
 import {routes} from './routes.js';
+import {globalStyles, shareStyles} from './styles.js';
 
 import './layouts/default';
 
@@ -32,6 +36,8 @@ export class AppRoot
     autoPageMetadata: true,
   });
   readonly ui = setupUI({
+    globals: globalStyles,
+    shares: shareStyles,
     skins: {
       'bootstrap/light': bootstrapLightSkin,
     },
