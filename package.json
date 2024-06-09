@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@tinijs/blank-starter",
-  "version": "0.20.0-pre",
+  "version": "0.20.0",
   "description": "The blank starter.",
   "author": "Nhan Lam",
   "homepage": "https://tinijs.dev",
