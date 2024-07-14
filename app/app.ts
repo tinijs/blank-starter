@@ -12,7 +12,7 @@ import {
   setupUI,
   bootstrapLightSkin,
   type AppWithUI,
-} from '@tinijs/ui-bootstrap';
+} from '@tinijs/ui-bootstrap/setup.js';
 
 import type {AppConfig} from './types/common.js';
 
